@@ -83,6 +83,8 @@ const uint16_t PROGMEM my_fh[] = {KC_F, KC_H, COMBO_END};
 const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
 const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
 const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
+const uint16_t PROGMEM my_jf[] = {KC_J, KC_F, COMBO_END};
+const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(my_jq, KC_QUES),
@@ -97,5 +99,7 @@ combo_t key_combos[] = {
     COMBO(my_je, KC_EXLM),
     COMBO(my_fn, KC_TILD),
     COMBO(my_jt, KC_PLUS),
+    COMBO(my_jf, KC_AT),
+    COMBO(my_jq, KC_ASTR),
 };
 #endif
