@@ -69,3 +69,32 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+#ifdef COMBO_ENABLE
+const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
+const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
+const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
+const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
+const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
+const uint16_t PROGMEM my_jd[] = {KC_J, KC_D, COMBO_END};
+const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
+const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
+const uint16_t PROGMEM my_fh[] = {KC_F, KC_H, COMBO_END};
+const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
+const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
+const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(my_jq, KC_QUES)
+    COMBO(my_js, KC_QUOT)
+    COMBO(my_jw, KC_DQUO)
+    COMBO(my_jb, KC_PIPE)
+    COMBO(my_fp, KC_PERC)
+    COMBO(my_jd, KC_DLR)
+    COMBO(my_ja, KC_AMPR)
+    COMBO(my_fh, KC_HASH)
+    COMBO(my_je, KC_EXLM)
+    COMBO(my_fn, KC_TILD)
+    COMBO(my_fp, KC_PLUS)
+};
+#endif
