@@ -85,16 +85,16 @@ const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
 const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(my_jq, KC_QUES)
-    COMBO(my_js, KC_QUOT)
-    COMBO(my_jw, KC_DQUO)
-    COMBO(my_jb, KC_PIPE)
-    COMBO(my_fp, KC_PERC)
-    COMBO(my_jd, KC_DLR)
-    COMBO(my_ja, KC_AMPR)
-    COMBO(my_fh, KC_HASH)
-    COMBO(my_je, KC_EXLM)
-    COMBO(my_fn, KC_TILD)
-    COMBO(my_jt, KC_PLUS)
+    COMBO(my_jq, KC_QUES),
+    COMBO(my_js, KC_QUOT),
+    COMBO(my_jw, KC_DQUO),
+    COMBO(my_jb, KC_PIPE),
+    COMBO(my_fp, KC_PERC),
+    COMBO(my_jd, KC_DLR),
+    COMBO(my_ja, KC_AMPR),
+    COMBO(my_fh, KC_HASH),
+    COMBO(my_je, KC_EXLM),
+    COMBO(my_fn, KC_TILD),
+    COMBO(my_jt, KC_PLUS),
 };
 #endif
