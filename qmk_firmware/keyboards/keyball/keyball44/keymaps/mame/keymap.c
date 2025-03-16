@@ -91,6 +91,7 @@ combo_t key_combos[] = {
     COMBO(my_jb, KC_PIPE),
     COMBO(my_fp, KC_PERC),
     COMBO(my_jd, KC_DLR),
+    COMBO(my_fu, KC_QUES),
     COMBO(my_ja, KC_AMPR),
     COMBO(my_fh, KC_HASH),
     COMBO(my_je, KC_EXLM),
