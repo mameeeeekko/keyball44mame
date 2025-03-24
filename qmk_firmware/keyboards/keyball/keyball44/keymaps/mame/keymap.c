@@ -86,10 +86,10 @@ const uint16_t PROGMEM my_tasu[] = {KC_J, KC_T, COMBO_END};
 const uint16_t PROGMEM my_yama[] = {KC_F, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_kake[] = {KC_F, KC_K, COMBO_END};
 const uint16_t PROGMEM my_up[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM my_down[] = {KC_M, KC_COMMA, COMBO_END};
+const uint16_t PROGMEM my_down[] = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM my_left[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_right[] = {KC_K, KC_L, COMBO_END};
-//const uint16_t PROGMEM my_l4[] = {KC_F, KC_D, COMBO_END};
+const uint16_t PROGMEM my_l4[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(my_ques, KC_QUES),
@@ -110,6 +110,6 @@ combo_t key_combos[] = {
     COMBO(my_down, KC_DOWN),
     COMBO(my_left, KC_LEFT),
     COMBO(my_right, KC_RGHT),
-    //COMBO(my_l4, MO(4)),
+    COMBO(my_l4, MO(4)),
 };
 #endif
