@@ -72,34 +72,42 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
-const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
-const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
-const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
+//const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
+//const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
+//const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
 const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
 const uint16_t PROGMEM my_jd[] = {KC_J, KC_D, COMBO_END};
-const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
-const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
+//const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
+//const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
 const uint16_t PROGMEM my_fh[] = {KC_F, KC_H, COMBO_END};
 const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
-const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
-const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
-const uint16_t PROGMEM my_jf[] = {KC_J, KC_F, COMBO_END};
+//const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
+//const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
+//const uint16_t PROGMEM my_jf[] = {KC_J, KC_F, COMBO_END};
 //const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM my_up[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM my_down[] = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM my_left[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM my_right[] = {KC_K, KC_L, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(my_jq, KC_QUES),
-    COMBO(my_js, KC_QUOT),
-    COMBO(my_jw, KC_DQUO),
-    COMBO(my_jb, KC_PIPE),
+    //COMBO(my_js, KC_QUOT),
+    //COMBO(my_jw, KC_DQUO),
+    //COMBO(my_jb, KC_PIPE),
     COMBO(my_fp, KC_PERC),
     COMBO(my_jd, KC_DLR),
-    COMBO(my_fu, KC_UNDS),
-    COMBO(my_ja, KC_AMPR),
+    //COMBO(my_fu, KC_UNDS),
+    //COMBO(my_ja, KC_AMPR),
     COMBO(my_fh, KC_HASH),
     COMBO(my_je, KC_EXLM),
-    COMBO(my_fn, KC_TILD),
-    COMBO(my_jt, KC_PLUS),
-    COMBO(my_jf, KC_AT),
-//    COMBO(my_jk, KC_ASTR),
+    //COMBO(my_fn, KC_TILD),
+    //COMBO(my_jt, KC_PLUS),
+    //COMBO(my_jf, KC_AT),
+    //COMBO(my_jk, KC_ASTR),
+    COMBO(my_up, KC_UP),
+    COMBO(my_down, KC_DOWN),
+    COMBO(my_left, KC_LEFT),
+    COMBO(my_right, KC_RGHT),
 };
 #endif
