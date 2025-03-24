@@ -132,6 +132,6 @@ combo_t key_combos[] = {
     [MC_DOWN] = COMBO(my_mco, KC_DOWN),
     [JK_LEFT] = COMBO(my_jk, KC_LEFT),
     [KL_RIGHT] = COMBO(my_kl, KC_RGHT),
-    [FD_LAYER] = COMBO(my_fd, MO(_LAYER)),
+    [FD_LAYER] = COMBO(my_fd, MO(4)),
 };
 #endif
