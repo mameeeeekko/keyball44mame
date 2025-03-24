@@ -71,43 +71,45 @@ void oledkit_render_info_user(void) {
 #endif
 
 #ifdef COMBO_ENABLE
-const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
-//const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
-//const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
-//const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
-const uint16_t PROGMEM my_fp[] = {KC_F, KC_P, COMBO_END};
-const uint16_t PROGMEM my_jd[] = {KC_J, KC_D, COMBO_END};
-//const uint16_t PROGMEM my_fu[] = {KC_F, KC_U, COMBO_END};
-//const uint16_t PROGMEM my_ja[] = {KC_J, KC_A, COMBO_END};
-const uint16_t PROGMEM my_fh[] = {KC_F, KC_H, COMBO_END};
-const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
-//const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
-//const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
-//const uint16_t PROGMEM my_jf[] = {KC_J, KC_F, COMBO_END};
-//const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM my_ques[] = {KC_J, KC_Q, COMBO_END};
+const uint16_t PROGMEM my_single[] = {KC_J, KC_S, COMBO_END};
+const uint16_t PROGMEM my_double[] = {KC_J, KC_W, COMBO_END};
+const uint16_t PROGMEM my_bou[] = {KC_J, KC_B, COMBO_END};
+const uint16_t PROGMEM my_per[] = {KC_F, KC_P, COMBO_END};
+const uint16_t PROGMEM my_dollar[] = {KC_J, KC_D, COMBO_END};
+const uint16_t PROGMEM my_under[] = {KC_F, KC_U, COMBO_END};
+const uint16_t PROGMEM my_and[] = {KC_J, KC_A, COMBO_END};
+const uint16_t PROGMEM my_hush[] = {KC_F, KC_H, COMBO_END};
+const uint16_t PROGMEM my_exclamation[] = {KC_J, KC_E, COMBO_END};
+const uint16_t PROGMEM my_nami[] = {KC_F, KC_N, COMBO_END};
+const uint16_t PROGMEM my_tasu[] = {KC_J, KC_T, COMBO_END};
+const uint16_t PROGMEM my_yama[] = {KC_F, KC_Y, COMBO_END};
+const uint16_t PROGMEM my_kake[] = {KC_F, KC_K, COMBO_END};
 const uint16_t PROGMEM my_up[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM my_down[] = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM my_down[] = {KC_COMM, KC_M, COMBO_END};
 const uint16_t PROGMEM my_left[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM my_right[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM my_l4[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(my_jq, KC_QUES),
-    //COMBO(my_js, KC_QUOT),
-    //COMBO(my_jw, KC_DQUO),
-    //COMBO(my_jb, KC_PIPE),
-    COMBO(my_fp, KC_PERC),
-    COMBO(my_jd, KC_DLR),
-    //COMBO(my_fu, KC_UNDS),
-    //COMBO(my_ja, KC_AMPR),
-    COMBO(my_fh, KC_HASH),
-    COMBO(my_je, KC_EXLM),
-    //COMBO(my_fn, KC_TILD),
-    //COMBO(my_jt, KC_PLUS),
-    //COMBO(my_jf, KC_AT),
-    //COMBO(my_jk, KC_ASTR),
+    COMBO(my_ques, KC_QUES),
+    COMBO(my_single, KC_QUOT),
+    COMBO(my_double, KC_DQUO),
+    COMBO(my_bou, KC_PIPE),
+    COMBO(my_per, KC_PERC),
+    COMBO(my_dollar, KC_DLR),
+    COMBO(my_under, S(KC_SLSH)),
+    COMBO(my_and, KC_AMPR),
+    COMBO(my_hush, KC_HASH),
+    COMBO(my_exclamation, KC_EXLM),
+    COMBO(my_nami, KC_TILD),
+    COMBO(my_tasu, KC_PLUS),
+    COMBO(my_yama, KC_CIRC),
+    COMBO(my_kake, S(KC_8)),
     COMBO(my_up, KC_UP),
     COMBO(my_down, KC_DOWN),
     COMBO(my_left, KC_LEFT),
     COMBO(my_right, KC_RGHT),
+    COMBO(my_l4, MO(4)),
 };
 #endif
