@@ -79,7 +79,7 @@ enum combos{
     DP_PER_EN,
     KD_DOL_EN,
     DU_UNDER_EN,
-    KA_ANDv_EN,
+    KA_AND_EN,
     DH_HUSH_EN,
     KE_EXCL_EN,
     DN_NAMI_EN,
