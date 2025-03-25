@@ -72,6 +72,20 @@ void oledkit_render_info_user(void) {
 
 #ifdef COMBO_ENABLE
 enum combos{
+    KQ_QUES_EN,
+    KS_SING_EN,
+    KW_DOUB_EN,
+    KB_BOU_EN,
+    DP_PER_EN,
+    KD_DOL_EN,
+    DU_UNDER_EN,
+    KA_ANDv_EN,
+    DH_HUSH_EN,
+    KE_EXCL_EN,
+    DN_NAMI_EN,
+    KT_TASU_EN,
+    DY_YAMA_EN,
+    DO_KAKE_EN,
     JQ_QUES,
     JS_SING,
     JW_DOUB,
@@ -85,13 +99,27 @@ enum combos{
     FN_NAMI,
     JT_TASU,
     FY_YAMA,
-    FK_KAKE,
+    FO_KAKE,
     UI_UP,
     MC_DOWN,
     JK_LEFT,
     KL_RIGHT,
     FD_LAYER,
 };
+const uint16_t PROGMEM my_kq[] = {KC_K, KC_Q, COMBO_END};
+const uint16_t PROGMEM my_ks[] = {KC_K, KC_S, COMBO_END};
+const uint16_t PROGMEM my_kw[] = {KC_K, KC_W, COMBO_END};
+const uint16_t PROGMEM my_kb[] = {KC_K, KC_B, COMBO_END};
+const uint16_t PROGMEM my_dp[] = {KC_D, KC_P, COMBO_END};
+const uint16_t PROGMEM my_kd[] = {KC_K, KC_D, COMBO_END};
+const uint16_t PROGMEM my_du[] = {KC_D, KC_U, COMBO_END};
+const uint16_t PROGMEM my_ka[] = {KC_K, KC_A, COMBO_END};
+const uint16_t PROGMEM my_dh[] = {KC_D, KC_H, COMBO_END};
+const uint16_t PROGMEM my_ke[] = {KC_K, KC_E, COMBO_END};
+const uint16_t PROGMEM my_dn[] = {KC_D, KC_N, COMBO_END};
+const uint16_t PROGMEM my_kt[] = {KC_K, KC_T, COMBO_END};
+const uint16_t PROGMEM my_dy[] = {KC_D, KC_Y, COMBO_END};
+const uint16_t PROGMEM my_do[] = {KC_D, KC_O, COMBO_END};
 
 const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
 const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
@@ -106,7 +134,8 @@ const uint16_t PROGMEM my_je[] = {KC_J, KC_E, COMBO_END};
 const uint16_t PROGMEM my_fn[] = {KC_F, KC_N, COMBO_END};
 const uint16_t PROGMEM my_jt[] = {KC_J, KC_T, COMBO_END};
 const uint16_t PROGMEM my_fy[] = {KC_F, KC_Y, COMBO_END};
-const uint16_t PROGMEM my_fk[] = {KC_F, KC_K, COMBO_END};
+const uint16_t PROGMEM my_fo[] = {KC_F, KC_O, COMBO_END};
+
 const uint16_t PROGMEM my_ui[] = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM my_mco[] = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM my_jk[] = {KC_J, KC_K, COMBO_END};
@@ -114,20 +143,34 @@ const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
+    [KQ_QUES_EN] = COMBO(my_kq, KC_QUES),
+    [KS_SING_EN] = COMBO(my_ks, KC_QUOT),
+    [KW_DOUB_EN] = COMBO(my_kw, KC_DQUO),
+    [KB_BOU_EN] = COMBO(my_kb, KC_PIPE),
+    [DP_PER_EN] = COMBO(my_dp, KC_PERC),
+    [KD_DOL_EN] = COMBO(my_kd, KC_DLR),
+    [DU_UNDER_EN] = COMBO(my_du, S(KC_MINS)),
+    [KA_AND_EN] = COMBO(my_ka, KC_AMPR),
+    [DH_HUSH_EN] = COMBO(my_dh, KC_HASH),
+    [KE_EXCL_EN] = COMBO(my_ke, KC_EXLM),
+    [DN_NAMI_EN] = COMBO(my_dn, KC_TILD),
+    [KT_TASU_EN] = COMBO(my_kt, KC_PLUS),
+    [DY_YAMA_EN] = COMBO(my_dy, KC_CIRC),
+    [DO_KAKE_EN] = COMBO(my_do, S(KC_8)),
     [JQ_QUES] = COMBO(my_jq, KC_QUES),
-    [JS_SING] = COMBO(my_js, KC_QUOT),
-    [JW_DOUB] = COMBO(my_jw, KC_DQUO),
-    [JB_BOU] = COMBO(my_jb, KC_PIPE),
+    [JS_SING] = COMBO(my_js, S(KC_7)),
+    [JW_DOUB] = COMBO(my_jw, S(KC_2)),
+    [JB_BOU] = COMBO(my_jb, KC_S(KC_INT3)),
     [FP_PER] = COMBO(my_fp, KC_PERC),
     [JD_DOL] = COMBO(my_jd, KC_DLR),
-    [FU_UNDER] = COMBO(my_fu, LSFT(KC_MINS)),
-    [JA_AND] = COMBO(my_ja, KC_AMPR),
+    [FU_UNDER] = COMBO(my_fu, S(KC_INT1)),
+    [JA_AND] = COMBO(my_ja, S(KC_6)),
     [FH_HUSH] = COMBO(my_fh, KC_HASH),
     [JE_EXCL] = COMBO(my_je, KC_EXLM),
-    [FN_NAMI] = COMBO(my_fn, KC_TILD),
-    [JT_TASU] = COMBO(my_jt, KC_PLUS),
-    [FY_YAMA] = COMBO(my_fy, KC_CIRC),
-    [FK_KAKE] = COMBO(my_fk, LSFT(KC_8)),
+    [FN_NAMI] = COMBO(my_fn, S(KC_EQL)),
+    [JT_TASU] = COMBO(my_jt, S(KC_SCLN)),
+    [FY_YAMA] = COMBO(my_fy, KC_EQL),
+    [FO_KAKE] = COMBO(my_fo, S(KC_QUOT)),
     [UI_UP] = COMBO(my_ui, KC_UP),
     [MC_DOWN] = COMBO(my_mco, KC_DOWN),
     [JK_LEFT] = COMBO(my_jk, KC_LEFT),
