@@ -106,7 +106,7 @@ enum combos{
     KL_RIGHT,
     FD_LAYER,
 };
-const uint16_t PROGMEM my_kq[] = {KC_K, KC_Q, COMBO_END};
+//const uint16_t PROGMEM my_kq[] = {KC_K, KC_Q, COMBO_END};
 const uint16_t PROGMEM my_ks[] = {KC_K, KC_S, COMBO_END};
 const uint16_t PROGMEM my_kw[] = {KC_K, KC_W, COMBO_END};
 const uint16_t PROGMEM my_kb[] = {KC_K, KC_B, COMBO_END};
@@ -121,7 +121,7 @@ const uint16_t PROGMEM my_kt[] = {KC_K, KC_T, COMBO_END};
 const uint16_t PROGMEM my_dy[] = {KC_D, KC_Y, COMBO_END};
 const uint16_t PROGMEM my_do[] = {KC_D, KC_O, COMBO_END};
 
-const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
+//const uint16_t PROGMEM my_jq[] = {KC_J, KC_Q, COMBO_END};
 const uint16_t PROGMEM my_js[] = {KC_J, KC_S, COMBO_END};
 const uint16_t PROGMEM my_jw[] = {KC_J, KC_W, COMBO_END};
 const uint16_t PROGMEM my_jb[] = {KC_J, KC_B, COMBO_END};
@@ -143,7 +143,7 @@ const uint16_t PROGMEM my_kl[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_fd[] = {KC_F, KC_D, COMBO_END};
 
 combo_t key_combos[] = {
-    [KQ_QUES_EN] = COMBO(my_kq, KC_QUES),
+    //[KQ_QUES_EN] = COMBO(my_kq, KC_QUES),
     [KS_SING_EN] = COMBO(my_ks, KC_QUOT),
     [KW_DOUB_EN] = COMBO(my_kw, KC_DQUO),
     [KB_BOU_EN] = COMBO(my_kb, KC_PIPE),
@@ -157,7 +157,7 @@ combo_t key_combos[] = {
     [KT_TASU_EN] = COMBO(my_kt, KC_PLUS),
     [DY_YAMA_EN] = COMBO(my_dy, KC_CIRC),
     [DO_KAKE_EN] = COMBO(my_do, S(KC_8)),
-    [JQ_QUES] = COMBO(my_jq, KC_QUES),
+    //[JQ_QUES] = COMBO(my_jq, KC_QUES),
     [JS_SING] = COMBO(my_js, S(KC_7)),
     [JW_DOUB] = COMBO(my_jw, S(KC_2)),
     [JB_BOU] = COMBO(my_jb, S(KC_INT3)),
